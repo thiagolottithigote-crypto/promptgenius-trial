@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptGenius Trial | Teste Grátis por 5 Minutos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🪄 PromptGenius Trial</h1>
+        <p>Teste nossa ferramenta de graça por <strong>5 minutos</strong>!</p>
+
+        <!-- Contador Regressivo -->
+        <div class="timer">
+            <p>⏳ Seu tempo acaba em: <span id="contador">05:00</span></p>
+        </div>
+
+        <!-- Área de Seleção -->
+        <div class="selecionadores">
+            <label for="nichos">Escolha um nicho:</label>
+            <select id="nichos">
+                <option value="">-- Selecione --</option>
+                <option value="youtube">YouTube</option>
+                <option value="tiktok">TikTok</option>
+                <option value="blog">Blog</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="terror">Terror</option>
+            </select>
+
+            <label for="tipoConteudo">O que você quer criar?</label>
+            <select id="tipoConteudo">
+                <option value="">-- Selecione --</option>
+                <option value="roteiro">Roteiro de Vídeo</option>
+                <option value="ideia">Ideia de Conteúdo</option>
+                <option value="email">Email de Vendas</option>
+                <option value="post">Post para Redes Sociais</option>
+            </select>
+        </div>
+
+        <!-- Botão para Gerar o Prompt -->
+        <button onclick="gerarPrompt()">✨ Gerar Prompt</button>
+
+        <!-- Área onde o Resultado Aparece -->
+        <div class="resultado">
+            <h3>Seu Prompt Pronto:</h3>
+            <textarea id="resultadoPrompt" readonly placeholder="Seu prompt aparecerá aqui..."></textarea>
+            <button onclick="copiarPrompt()">📋 Copiar Prompt</button>
+        </div>
+
+        <!-- Aviso sobre o Trial -->
+        <p class="aviso">⏰ <strong>Atenção:</strong> Este é um acesso trial. Para usar sem limites, <a href="https://pay.kiwify.com.br/z3nIxFy" target="_blank">compre o acesso ilimitado</a>.</p>
+    </div>
+
+    <!-- Importa o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
